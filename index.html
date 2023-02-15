@@ -12,8 +12,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Aggiungere font sizes -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
@@ -49,7 +51,7 @@
                     <a href="">Accedi</a>
                 </li>
                 <li>
-                    <a class="start-button" href="">Inizia</a>
+                    <a class="button" href="">Inizia</a>
                 </li>
             </ul>
         </nav>
@@ -61,10 +63,17 @@
         <!-- Top main -->
          <div class="top-main">
             <div class="intro">
-                <h1>Tutto ciò che ti serve per il lavoro in unico posto</h1>
+                <h1 class="title-1">Tutto ciò che ti serve per il lavoro in unico posto</h1>
                 <div class="row">
-                    <div class="col-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eligendi quo illum hic incidunt, quaerat voluptatibus, nisi porro in error blanditiis. Consectetur dolore ut saepe nulla tempore expedita animi veritatis!</div>
-                    <div class="col-70">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maxime repellendus ut rem dolore architecto nobis maiores id, minima, sapiente, totam recusandae eos unde numquam. Quod labore eveniet facilis ipsam?</div>
+                    <div class="col-30">
+                        <p>Finalmente tutti i tuoi strumenti contenuti e collaboratori sono accessibili allo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                        <a class="button" href="">Inizia la tua prova gratuita</a>
+                        <p>Annulla in qualsiasi momento</p>
+                        <i class="arrow fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="col-70">
+                        <img src="img/jumbo.png" alt="Jumbo">
+                    </div>
                 </div>
             </div>
          </div>
@@ -73,7 +82,15 @@
         <div class="container">
             <!-- Business plan -->
             <div class="business-plan">
-                <h2>Trova il piano business che fa per te</h2>
+                <h2 class="title-2">Trova il piano business che fa per te</h2>
+                <div class="input-radio">
+                    <input type="radio" name="billing" value="monthly" id="radio">
+                    <label for="radio">Fatturazione mensile</label>
+                </div>
+                <div class="input-radio">
+                    <input type="radio" name="billing" value="annualy" id="radio">
+                    <label for="radio">Fatturazione annuale</label>
+                </div>
                 <div class="row space-between">
                     <div class="col-30">
                         <div class="card">
