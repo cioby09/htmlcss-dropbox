@@ -13,6 +13,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* Utilities */
 .flex {
     display: flex;
@@ -37,6 +41,7 @@ header {
     top: 0;
     padding: 0 1rem;
     line-height: 50px;
+    font-size: 0.7rem;
 }
 
 .header-top {
@@ -44,9 +49,19 @@ header {
 }
 
 .header-links {
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
+.logo {
+    vertical-align: middle;
+    height: 1rem;
+}
+
+.start-button {
+    background-color: #0061FF;
+    color: #FFFFFF;
+    padding: 4px 12px;
+}
 /* Main */
 
 /* Top main */
