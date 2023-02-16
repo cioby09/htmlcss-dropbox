@@ -100,14 +100,14 @@ header {
 }
 
 [class^="col-"] {
-    /* debug */
-    border: 2px solid black;
-    margin-bottom: 3rem;
+    border: 1px solid #DBDBDD;
+    margin-bottom: 2rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .col-30 {
@@ -118,36 +118,140 @@ header {
     width: 70%;
 }
 
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
 /* Business plan */
 .container {
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
-}
+}    
 
 .business-plan {
-    background-color: #0061FF;
-    margin-top: 250px;
-}
+    margin-top: 100px;
+}    
 
+/* Input radio */
 #radio,
 .input-radio label {
     vertical-align: middle;
-}
+}    
 
-.partner {
-    background-color: #0061FF;
-    margin-top: 150px;
-}
+.input-radio {
+    display: inline-block;
+    margin-top: 2rem;
+    padding-right: 2rem;
+}    
 
-/* debug */
-.card {
-    border: 2px solid black;
-}
-
+/* Dropbox business */
 .dropbox-business {
     background-color: #0061FF;
     margin-top: 150px;
 }
+
+/* Card */
+.card {
+    font-size: 0.7rem;
+    line-height: 1.8rem;
+}    
+
+.card li {
+    line-height: 1rem;
+    margin: 1rem 0;
+}    
+
+.card .button {
+    width: 100%;
+    text-align: center;
+}    
+
+.card-type {
+    text-align: center;
+    border-bottom: 1px solid #DBDBDD;
+}    
+
+.card-content {
+    padding: 1rem;
+}    
+
+.card-recap {
+    padding: 1rem;
+}    
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}    
+
+.price {
+    font-weight: 600;
+    line-height: 1rem;
+}    
+
+.features {
+    margin: 2rem 0;
+}    
+.card .fa-ul {
+    margin-left: 0;
+    padding-left: 1rem;
+}    
+
+.buy-now {
+    margin-top: 1rem;
+}    
+
+.buy-now span{
+    border-bottom: 1px solid #DBDBDD;
+    padding-bottom: 1.8rem;
+}    
+
+.buy-now a {
+    text-decoration: underline;
+    color: #0061FF;
+}    
+
+.recap-list i {
+    color: #0061FF;
+}    
+
+.card-recap {
+    margin-top: 1rem;
+}    
+
+.recap-title {
+    font-weight: 600;
+}    
+
+.bottom-row .row {
+    margin: 0;
+}    
+
+.bottom-row .col-30,
+.bottom-row .col-70 {
+    margin-bottom: 0;
+    border: none;
+}    
+
+.bottom-row p {
+    margin-top: 2rem;
+    line-height: 1rem;
+}    
+
+/* Partner */
+.partner {
+    background-color: #0061FF;
+    margin-top: 5rem;
+}    
 
 .discover {
     margin-top: 5rem;
