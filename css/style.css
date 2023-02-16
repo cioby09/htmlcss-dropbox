@@ -17,6 +17,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Common */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+}
+
 /* Utilities */
 .flex {
     display: flex;
@@ -25,10 +32,66 @@ a {
 .space-between {
     justify-content: space-between;
 }
-/* Common */
-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.7rem;
+
+.button {
+    display: inline-block;
+    background-color: #0061FF;
+    color: hsl(0, 0%, 100%);
+    padding: 5px 10px;
+    line-height: 1rem;
+}
+
+.container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+/* Column layout utilities */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-90 {
+    width: 90%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/* Tipography */
+.title-1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.title-2{
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 /* Layout */
@@ -38,11 +101,11 @@ header {
     background-color: #FFFFFF;
     z-index: 999;
     width: 100%;
-    height: 50px;
+    height: 3.5rem;
     position: fixed;
     top: 0;
     padding: 0 1rem;
-    line-height: 50px;
+    line-height: 3.5rem;
 }
 
 .header-top {
@@ -58,13 +121,6 @@ header {
     height: 1rem;
 }
 
-.button {
-    display: inline-block;
-    background-color: #0061FF;
-    color: hsl(0, 0%, 100%);
-    padding: 5px 10px;
-    line-height: 1rem;
-}
 /* Main */
 
 /* Top main */
@@ -80,20 +136,8 @@ header {
     top: 3rem;
 }
 
-.title-1 {
-    font-size: 3rem;
-    font-weight: 800;
-    padding: 0.3rem;
-    margin-bottom: 2rem;
-}
-
-.title-2{
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
 .intro .button {
-   margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 .arrow {
@@ -106,44 +150,14 @@ header {
     margin-bottom: 1rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.col-30 {
-    width: 30%;
-}
-
-.col-70 {
-    width: 70%;
-}
-
-.col-60 {
-    width: 60%;
-}
-
-.col-40 {
-    width: 40%;
-}
-
-.col-100 {
-    width: 100%;
-}
-
 /* Business plan */
-.container {
-    width: 55%;
-    margin: 0 auto;
-}
-
 .business-plan {
-    margin-top: 100px;
+    margin-top: 6rem;
 }
 
 /* Input radio */
-#radio,
+#radio1,
+#radio2,
 .input-radio label {
     vertical-align: middle;
 }
@@ -282,18 +296,20 @@ header {
 }
 
 /* Team members */
-.team-members {
+.teams {
     background-color: #F5F5F5;
     margin-top: 100px;
     width: 100%;
 }
 
+/* Square */
 .square {
     width: calc(100% / 3);
     aspect-ratio: 1/1;
 }
 
 .square-card {
+    overflow: auto;
     padding: 10%;
     width: 100%;
     height: 100%;
@@ -330,6 +346,7 @@ header {
     filter: invert(100%);
 }
 
+/* Team card colors */
 .team-1 {
     background-color: #A2D39B;
     border: 10px solid #D1E9CD;
@@ -362,6 +379,7 @@ header {
 .team-8 {
     background-color: #FFD830;
 }
+
 /* Try Dropbox */
 .try {
     background-color: #B4D0E7;
@@ -409,31 +427,8 @@ header {
     margin: 1.7rem 0;
 }
 
-.col-90 {
-    width: 90%;
-}
-
-.col-10 {
-    width: 10%;
-}
-
 .answer {
     margin-top: 1rem;
-}
-
-/* Faq hover */
-.answer,
-.angle-up {
-    display: none;
-}
-
-.faq .row:hover .answer,
-.faq .row:hover .angle-up {
-    display: inline-block;
-}
-
-.faq .row:hover .angle-down {
-    display: none;
 }
 
 /* Footer */
@@ -449,7 +444,7 @@ footer {
 }
 
 .col-20 {
-    width: calc((100% / 5) - (1rem - (1rem / 5)));
+    width: calc(20% - (1rem - (1rem / 5)));
 }
 
 .footer-container {
@@ -472,4 +467,35 @@ footer {
 
 .language .earth {
     padding-right: 3px;
+}
+
+/* Hover */
+.menu-link:hover {
+    border-bottom: 2px solid #000000;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.col-50 img{
+    transition: 0.3s linear;
+}
+
+.col-50:hover img{
+    width: 60%;
+}
+
+.answer,
+.angle-up {
+    display: none;
+}
+
+.faq .row:hover .answer,
+.faq .row:hover .angle-up {
+    display: inline-block;
+}
+
+.faq .row:hover .angle-down {
+    display: none;
 }
